@@ -11,7 +11,7 @@ int main(void)
 {
 	char putch[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 
-	long unsigned int c;
+	unsigned int c;
 
 
 	for (c = 0; c < sizeof(putch); c++)
