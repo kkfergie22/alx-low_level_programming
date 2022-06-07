@@ -10,13 +10,18 @@
 
 int main(void)
 {
-
-	char c;
-
-	while (c != 'z')
+	void print_alphabet(void)
 	{
-		_putchar(c);
-		c++;
-	}	
+
+		char c;
+
+		while (c != 'z')
+		{
+			_putchar(c);
+			c++;
+		}
+		_putchar('\n');
+	}
+
 	return (0);
 }
