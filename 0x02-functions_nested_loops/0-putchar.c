@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char putch = {"_", "p", "u", "t", "c", "h", "a", "r"};
+	char putch = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 
 	int c;
 
