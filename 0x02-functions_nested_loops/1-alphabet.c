@@ -7,13 +7,10 @@
  *
  *
  */
-
-int main(void)
-{
 	void print_alphabet(void)
 	{
 
-		char c;
+		char c = 'a';
 
 		while (c != 'z')
 		{
@@ -22,6 +19,3 @@ int main(void)
 		}
 		_putchar('\n');
 	}
-
-	return (0);
-}
