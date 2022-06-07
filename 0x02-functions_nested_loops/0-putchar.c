@@ -17,7 +17,7 @@ int main(void)
 	for (c = 0; c < sizeof(putch); c++)
 	{
 
-		_putchar(putch[8]);
+		_putchar(putch[c]);
 
 	}
 
