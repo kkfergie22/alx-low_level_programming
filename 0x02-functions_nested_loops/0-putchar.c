@@ -11,7 +11,7 @@ int main(void)
 {
 	char putch[8] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 
-	unsigned int c;
+	int c;
 
 
 	for (c = 0; c < sizeof(putch); c++)
@@ -21,7 +21,7 @@ int main(void)
 
 	}
 
-	_putchar("\n");
+	_putchar('\n');
 
 	return (0);
 }
