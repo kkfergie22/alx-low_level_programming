@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isalpha - function to check if c is capital or small
- * c: is the argument of the function
+ * @c: is the argument of the function
  * Return: 0
  */
 int _isalpha(int c)
