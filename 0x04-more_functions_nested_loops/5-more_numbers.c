@@ -7,13 +7,13 @@
 void more_numbers(void)
 {
 	int i = 0;
-	char c;
+	int c;
 
 	while (i <= 9)
 	{
-		char c = '0';
+		int c = 0;
 
-		while (c <= '14')
+		while (c <= 14)
 		{
 			_putchar(c);
 			c++;
