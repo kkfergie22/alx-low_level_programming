@@ -1,17 +1,15 @@
 #include "main.h"
+
 /**
- * print_line - prints a line accross the terminal
- * @n: iterator
- */
+* print_line - prints a straight line in the terminal
+* @n: Number of times of the character '_'
+*/
 
 void print_line(int n)
 {
-	char c = 0;
+	char c;
 
-	while (c <= n)
-	{
+	for (c = 0; c < n; c++)
 		_putchar('_');
 	_putchar('\n');
-	c++;
-	}
 }
