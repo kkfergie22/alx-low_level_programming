@@ -5,15 +5,12 @@
  * and updates the value to 98
  *
  *@n: the variable
- * Return: Always 0
+ * Return: nothing
  */
 
 void reset_to_98(int *n)
 {
-	int m;
-	int *n = &m;
-
-	m = 98;
+	int *n = 98;
 
 	return (void);
 }
