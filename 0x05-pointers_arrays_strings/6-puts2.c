@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * puts2 - Prints characters of string
+ * puts2 - Prints the characters of string
  *
- * @str: String
+ * @str: String variable
  */
 
 void puts2(char *str)
 {
 	int i;
-	int len;
+	int length;
 
-	for (len =  0; str[len] != '\0'; len++)
+	for (length =  0; str[length] != '\0'; length++)
 	{}
 
-	for (i = 0; i < len; i++)
+	for (i = 0; i < length; i++)
 	{
 		if (i % 2 == 0)
 			_putchar(str[i]);
