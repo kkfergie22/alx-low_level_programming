@@ -1,20 +1,20 @@
 #include "main.h"
-/**
- * print_rev - prints a string in reverse
- * @s: string variable
- */
 
+/**
+ * print_rev - Prints a string in reverse
+ *
+ * @s: String
+ */
 void print_rev(char *s)
 {
-	int i;
+	int len;
 
-	for (i = 0; s[i]; i++)
-	{}		
+	for (len = 0; s[len]; len++)
+	{}
 
-	for (; s[i]; i++)
+	for (; s[len - 1]; len--)
 	{
-		_putchar(s[i - 1]);
+		_putchar(s[len - 1]);
 	}
 	_putchar('\n');
 }
-
