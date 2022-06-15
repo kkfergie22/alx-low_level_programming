@@ -13,24 +13,27 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int j = 0;
+	int j;
+	int i;
+
+	j = 0;
 	/*Find the end of the destination string*/
-	while (copy[j] != '\0')
+	while (dest[j] != '\0')
 	{
 		j++;
 	}
 
 	/*Append characters to src until end (null of src or n != 0)*/
-	int i = 0;
+	i = 0;
 
 	while (i < n && src[i] != '\0')
 	{
-		dest[copy] = src[i];
-		copy++;
+		dest[j] = src[i];
+		j++;
 		i++;
 	}
 	/*Add null character*/
-	dest[i] = '\0';
+	dest[j] = '\0';
 
 	return (dest);
 }
