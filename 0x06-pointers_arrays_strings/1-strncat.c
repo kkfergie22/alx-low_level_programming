@@ -14,8 +14,9 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	char *copy = dest; /*Copy the destination string*/
+	int i = 0;
 	/*Find the end of the destination string*/
-	while (*copy != '\0')
+	while (copy[i] != '\0')
 	{
 		copy++;
 	}
