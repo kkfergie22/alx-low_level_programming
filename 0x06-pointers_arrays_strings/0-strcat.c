@@ -15,19 +15,22 @@ char *_strcat(char *dest, char *src)
 
 	/*store the length of the destination string*/
 
-	while (*dest[length] != '\0')
+	while (dest[length] != '\0')
 	{
 		length++;
 	}
+	/*Add the two strings*/
 
 	i = 0;
 
-	while (*src[i] != '\0')
+	while (src[i] != '\0')
 	{
-		*dest[length] = *src[i];
+		dest[length] = src[i];
 		i++;
 		length++;
 	}
-	_putchar(*dest);
+	/*terminate destination string*/
+	dest[length] = '\0';
+	return (dest);
 }
 
