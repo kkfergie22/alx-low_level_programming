@@ -21,12 +21,11 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	/*Append characters to src until end (null of src or n != 0)*/
-	while (n--)
+	while (i < n && src (i) != '\0')
 	{
-		if (!(*dest++ == *src++))
-		{
-			return (dest);
-		}
+		dest[copy] = src[i];
+		copy++;
+		i++;
 	}
 	/*Add null character*/
 	*copy = '\0';
