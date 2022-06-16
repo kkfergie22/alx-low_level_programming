@@ -4,27 +4,32 @@
  * @dest:variable of destination
  * @src: variable of source
  * @n: variable of bytes
- * return: copy
+ * Return: dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
+	int i = 0;
+	int j = 0;
+
+
 	/*check to see if string is valid*/
 	if (dest == NULL && src == NULL)
 	{
 		return (NULL);
 	}
 
-	/*copy the string*/
-	char *copy = dest;
 	/*copy first n characters of src*/
-	while (*src && n--)
+	while (i != n)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[j] = src[i];
+		j++;
+		i++;
 	}
 	/*Add null*/
-	*dest = '\0';
-	return (copy);
+	while (j != n)
+	{
+		dest[j++] = '\0';
+	}
+	return (dest);
 }
