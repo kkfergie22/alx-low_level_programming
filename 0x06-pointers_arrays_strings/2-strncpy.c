@@ -18,10 +18,6 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[j] = src[i];
 		j++;
 		i++;
-		if (src[i] == '\0')
-		{
-			break;
-		}
 	}
 	/*Add null*/
 	while (j != n)
