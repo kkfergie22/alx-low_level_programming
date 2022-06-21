@@ -2,8 +2,6 @@
 
 In this project, I learned about pointers, multidimensional arrays, common C standard library functions and how to use them to manipulate strings. 
 
-![Photo](https://github.com/princeardayfio/alx-low_level_programming/blob/main/0x07-pointers_arrays_strings/pointers_meme.jpg)
-
 ## Header File :file_folder:
 
 * [main.h](./main.h): Header file containing prototypes for all functions written in the project. 
