@@ -9,7 +9,7 @@
 
 void _print_rev_recursion(char *s)
 {
-	int i, length;
+	int i, length, temp;
 
 	if (i < length / 2)
 	{
