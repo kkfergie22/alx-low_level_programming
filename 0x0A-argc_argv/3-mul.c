@@ -19,16 +19,14 @@ int main(int argc, char *argv[])
 	b = atoi(argv[2]);
 
 	/*Check if arguments are exactly two*/
-	if (argc < 3 || argc > 3)
+	if (argc == 3)
 	{
-		printf("Error\n");
-		return (1);
+		printf("%d\n", a * b);
 	}
-	else if (argc == 3)
+	else
 	{
-
-	product = a * b;
-	printf("%d\n", product);
+	printf("Error\n");
+	return (1);
 	}
 
 	return (0);
