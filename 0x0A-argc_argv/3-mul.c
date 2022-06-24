@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int a, b, product;
 
-	a = atoi(argv[1]); 
+	a = atoi(argv[1]);
 	b = atoi(argv[2]);
 
 	/*Check if arguments are exactly two*/
