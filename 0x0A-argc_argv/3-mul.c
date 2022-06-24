@@ -1,33 +1,26 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
  * main - multiplies two numbers
  * @argc: number of arguments
- * @argv: array of argumentst
+ * @argv: array of pointers
  *
- * Return: 1 if error and 0 if successful
- *
+ * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char **argv __attribute__((unused)))
 {
-	int a, b, product;
+	int product;
 
-	a = atoi(argv[1]);
-	b = atoi(argv[2]);
-
-	/*Check if arguments are exactly two*/
 	if (argc == 3)
 	{
-		printf("%d\n", a * b);
+		product = (atoi(argv[1]) * atoi(argv[2]));
+		printf("%d\n", product);
 	}
 	else
 	{
-	printf("Error\n");
-	return (1);
+		printf("Error\n");
+		return (1);
 	}
-
 	return (0);
 }
