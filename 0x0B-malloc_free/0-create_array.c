@@ -30,7 +30,7 @@ char *create_array(unsigned int size, char c)
 	}
 	while (i < size)
 	{
-		array[i] = array[c];
+		array[i] = c;
 		i++;
 	}
 	return (array);
