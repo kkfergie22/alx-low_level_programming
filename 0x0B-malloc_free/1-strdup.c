@@ -29,18 +29,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	i = 0;
+	j = 0;
 
-	while (str[i] != '\0')
+	while (copy[j] != '\0')
 	{
-		j = 0;
-
-		while (copy[j] != '\0')
-		{
-			copy[j] = str[j];
-			j++;
-		}
-		i++;
+		copy[j] = str[j];
+		j++;
 	}
 
 	return (copy);
