@@ -18,6 +18,7 @@ char *_strdup(char *str)
 	{
 		k++;
 	}
+	k++;
 
 	copy = malloc(sizeof(*str) * k);
 
