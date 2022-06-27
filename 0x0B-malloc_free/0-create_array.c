@@ -13,7 +13,7 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int i = 0;
+	unsigned int i = 0;
 	char *array;
 	char *s;
 
@@ -31,6 +31,7 @@ char *create_array(unsigned int size, char c)
 	while (i < size)
 	{
 		array[i] = array[c];
+		i++;
 	}
 	return (array);
 
