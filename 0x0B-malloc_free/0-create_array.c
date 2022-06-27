@@ -1,5 +1,8 @@
 #include <stdio.h>
+#include <limits.h>
+#include <stdlib.h>
 #include "main.h"
+
 /**
  * create_array - creates an array and initialises with a specific character
  *@size: size of memory
@@ -16,16 +19,14 @@ char *create_array(unsigned int size, char c)
 	s = malloc(INT_MAX);
 
 	array = malloc(sizeof(char) * size);
-	array = c;
+	array[0] = c;
 	if (size == 0)
 	{
 		return (NULL);
 	}
 	else if (s == NULL)
 	{
-		return (1);
+		return (NULL);
 	}
-
-	return (create_array);
 
 }
