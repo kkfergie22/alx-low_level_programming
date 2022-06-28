@@ -10,33 +10,26 @@
 
 char *_strdup(char *str)
 {
-	int j, k;
+	unsigned int i, j, k;
 	char *copy;
 
-	k = 0;
-	while (str[k] != '\0')
+	for (k = 0; str[k] != '\0'; k++)
 	{
-		k++;
 	}
-	k++;
 
-	copy = malloc(sizeof(*str) * k);
+	copy = malloc(sizeof(*str) * k + 1);
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	else if (copy == NULL)
-	{
-		return (NULL);
-	}
 
-	j = 0;
-
-	while (copy[j] != '\0')
+	for (i = 0; i < k; i++)
 	{
-		copy[j] = str[j];
-		j++;
+		for (j = 0; str[j] != '\0'; j++)
+		{
+			copy[j] = str[j];
+		}
 	}
 
 	return (copy);
