@@ -23,6 +23,10 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+	if (copy == NULL)
+	{
+		return (NULL);
+	}
 
 	for (i = 0; i < k; i++)
 	{
