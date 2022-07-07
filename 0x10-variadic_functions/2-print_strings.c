@@ -28,6 +28,9 @@ if (separator != NULL && i < n - 1)
 {
 printf("%s", separator);
 }
+
 va_end(args);
+
 printf("\n");
+}
 }
