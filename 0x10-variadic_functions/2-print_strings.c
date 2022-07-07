@@ -21,10 +21,13 @@ va_start(args, n);
 for (i = 0; i < n; i++)
 {
 printf("%s", va_arg(args, char *));
-if (i < n - 1)
+if (separator != NULL && i < n - 1)
 {
 printf("%s", separator);
 }
+if (... == NULL)
+{
+printf("(nil)\n");
 }
 va_end(args);
 printf("\n");
