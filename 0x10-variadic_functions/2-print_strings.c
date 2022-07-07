@@ -25,7 +25,7 @@ if (separator != NULL && i < n - 1)
 {
 printf("%s", separator);
 }
-if (... == NULL)
+if ((va_arg(args, char*)) == NULL)
 {
 printf("(nil)\n");
 }
